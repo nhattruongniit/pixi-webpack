@@ -1,7 +1,7 @@
 const path = require('path');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 module.exports = {
-    entry: "./src/helloworld.ts",
+    entry: "./src/step-to-step.ts",
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist')
@@ -37,7 +37,8 @@ module.exports = {
             host: 'localhost',
             port: 3000,
             server: {
-                baseDir: ['./']
+                baseDir: ['./'],
+                open: false
             }
         }),
     ],
